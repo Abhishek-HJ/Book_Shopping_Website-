@@ -1,0 +1,85 @@
+/* PD.css */
+
+.productdisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.productdisplay-left, .productdis-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.productdisplayimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.productdis-main-img {
+  max-width: 100%;
+  max-height: 300px; /* Adjust as necessary */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Ensures the image fits within the given dimensions without distortion */
+}
+
+.productdisplay-right-star {
+  display: flex;
+  align-items: center;
+}
+
+.productdisplay-right-star img {
+  width: 20px; /* Ensure the star icons are the same size */
+  height: 20px;
+  margin-right: 5px;
+}
+
+.productdisplay-right-star p {
+  margin-left: 10px;
+}
+
+.productdisplay-right-prices {
+  margin-top: 10px;
+}
+
+.productdisplay-right-price-old, .productdisplay-right-price-new {
+  margin-bottom: 10px;
+}
+
+.price-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.prdis-right-description {
+  margin-top: 20px;
+}
+
+.add-to-cart-btn {
+  background-color:  #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.add-to-cart-btn:hover {
+  background-color:  #007bff;
+}
+
+.prdis-right-cate {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.prdis-right-cate span {
+  font-weight: normal;
+}

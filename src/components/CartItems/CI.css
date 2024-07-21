@@ -1,0 +1,102 @@
+/* CI.css */
+
+.cartitems {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 100px 179px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cartitem-format-main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cartitem-format-main p {
+  text-align: center;
+}
+
+.cartitems-format {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.cartitems-format img {
+  width: 50px; /* Adjust image size as needed */
+  height: 50px;
+  object-fit: cover;
+}
+
+.cartitems-format p {
+  text-align: center;
+}
+
+.cart-item-quantity {
+  width: 50px; /* Adjust button size as needed */
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(61, 61, 187);
+  
+}
+
+.cartitems-format img:last-child {
+  cursor: pointer;
+  width: 20px; /* Smaller size for the remove icon */
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cartitem-format-main {
+      grid-template-columns: repeat(4, 1fr); /* Adjust columns for smaller screens */
+  }
+
+  .cartitems-format {
+      grid-template-columns: repeat(4, 1fr); /* Adjust columns for smaller screens */
+  }
+
+  .cartitems-format img {
+      width: 40px; /* Adjust image size for smaller screens */
+      height: 40px;
+  }
+
+  .cart-item-quantity {
+      width: 40px; /* Adjust button size for smaller screens */
+  }
+
+  .cartitems-format img:last-child {
+      width: 16px; /* Adjust remove icon size for smaller screens */
+      height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartitem-format-main {
+      grid-template-columns: repeat(3, 1fr); /* Adjust columns for even smaller screens */
+      font-size: 0.8em; /* Adjust font size */
+  }
+
+  .cartitems-format {
+      grid-template-columns: repeat(3, 1fr); /* Adjust columns for even smaller screens */
+  }
+
+  .cartitems-format img {
+      width: 30px; /* Adjust image size for even smaller screens */
+      height: 30px;
+  }
+
+  .cart-item-quantity {
+      width: 30px; /* Adjust button size for even smaller screens */
+  }
+
+  .cartitems-format img:last-child {
+      width: 14px; /* Adjust remove icon size for even smaller screens */
+      height: 14px;
+  }
+}

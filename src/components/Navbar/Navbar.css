@@ -1,0 +1,188 @@
+/* Updated CSS for the Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff; /* Primary blue color for the navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allows the navbar to wrap on smaller screens */
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-logo p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff; /* White color for text */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  color: #ffffff; /* White color for links */
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #e0e0e0; /* Light gray color on hover */
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the search bar to the right */
+}
+
+.nav-search input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.nav-search .b {
+  background-color: #0056b3; /* Darker blue for button */
+  margin-left: 10px;
+  padding: 6px 12px; /* Adjusted padding to make the button smaller */
+  font-size: 14px; /* Adjusted font size to make the button text smaller */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.nav-search .b:hover {
+  background-color: #003d7a; /* Even darker blue on hover */
+}
+
+.nav-logo-cart {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Ensure there is space between the cart and other elements */
+}
+
+.nav-logo-cart button {
+  margin-right: 10px; /* Reduced margin for better spacing */
+  padding: 6px 12px; /* Adjusted padding to make the button smaller */
+  font-size: 14px; /* Adjusted font size to make the button text smaller */
+  color: #ffffff;
+  background-color: #0056b3; /* Darker blue for button */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.nav-logo-cart button:hover {
+  background-color: #003d7a; /* Even darker blue on hover */
+}
+
+.nav-logo-cart img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.nav-cart-count {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #523aed;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: -10px;
+  position: relative;
+  top: -10px;
+  left: -15px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start; /* Align items to the start on smaller screens */
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .nav-search input {
+    width: calc(100% - 80px); /* Adjust width to fit well with the button */
+    margin-right: 10px;
+  }
+
+  .nav-logo-cart {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center; /* Center-align the buttons on smaller screens */
+  }
+
+  .nav-logo-cart button {
+    margin: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo p {
+    font-size: 16px;
+  }
+
+  .nav-menu a {
+    font-size: 14px;
+  }
+
+  .nav-logo-cart {
+    flex-direction: column;
+    align-items: center; /* Center-align the buttons on very small screens */
+  }
+
+  .nav-logo-cart button {
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .nav-logo-cart img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav-cart-count {
+    font-size: 12px;
+    padding: 3px 7px;
+    top: -8px;
+    left: -10px;
+  }
+}
